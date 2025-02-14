@@ -1,46 +1,12 @@
 # swingCalculator-U22AUE1027
-import java.util.Scanner;
 
-public class Calculator {
-    public static void main(String[] args) {
-        // Create a Scanner object to read input from the console
-        // System.in is the standard input stream (usually the keyboard)
-        Scanner scanner = new Scanner(System.in);
+        Swing Calculator 
+        A simple java calculator built with Java Swing
 
-        System.out.println("Enter first number: ");
-        double num1 = scanner.nextDouble();
-
-        System.out.println("Enter second number: ");
-        double num2 = scanner.nextDouble();
-
-        System.out.println("Enter an operator (+, -, *, /): ");
-        char operator = scanner.next().charAt(0);
-
-        double result;
-
-        switch (operator) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                if (num2 != 0) {
-                    result = num2 / num1;
-                } else {
-                    System.out.println("Error! Division by zero.");
-                    return;
-                }
-                break;
-            default:
-                System.out.println("Invalid operator!");
-                return;
-        }
-
-        System.out.println("The result is: " + result);
-    }
-}
+        Features
+        1. BAsic arithemetic operation: addition, subtraction, multiplication, division.
+        2. Numeric input using buttons 0-9 and decimal point
+        3. Operator selections +, -, ^, /,
+        4. Equal butto to calculate result
+        5. Delete button to remove last input digit
+        6. Clear button to reset calculator
